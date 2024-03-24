@@ -25,15 +25,6 @@ services:
     command: sh -c "npm run dev"
     ports:
       - "3000:3000"
-  go-server:
-    build:
-      context: ./go-server
-      dockerfile: Dockerfile
-    ports:
-      - "8080:8080"
-    tty: true
-    volumes:
-      - ./go-server:/app
 ```
 
 ## 〜コマンドについて〜
