@@ -91,13 +91,15 @@ CMD ["air"]
 compose.yaml に以下追記
 
 ```yaml
-go-server:
-build:
-context: ./go-server
-dockerfile: Dockerfile
-ports: - "8080:8080"
-tty: true
-volumes: - ./go-server:/app
+  go-server:
+    build:
+      context: ./go-server
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    tty: true
+    volumes:
+      - ./go-server:/app
 ```
 
 /go-server/.air.toml の追加
