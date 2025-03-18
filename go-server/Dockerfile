@@ -1,4 +1,4 @@
-FROM golang:1.22.1-bookworm
+FROM golang:1.24.1-bookworm
 WORKDIR /app
-RUN go install github.com/cosmtrek/air@latest
+RUN go install github.com/air-verse/air@latest
 CMD ["air"]
